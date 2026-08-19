@@ -135,7 +135,7 @@
           <p class="lead">This guide shows every action in the two screens you'll use most — recorded from the live application. Move with <b>Next / Back</b> or the list on the left.</p>
           <div class="cards">
             <div class="card"><h3>Custom SCBA Parameters</h3><p>Add, edit and remove compliance parameter rows — every change logged with a source citation.</p></div>
-            <div class="card"><h3>Database Viewer · Assets</h3><p>Browse the asset inventory: choose columns, filter, sort, open a record, and print.</p></div>
+            <div class="card"><h3>Asset Database · Assets</h3><p>Browse the asset inventory: choose columns, filter, sort, open a record, and print.</p></div>
           </div>
           <div class="note"><span class="ic">▶</span><p>Each step plays a short clip of the real action. Watch once, then do it yourself.</p></div>
         </div>
@@ -175,12 +175,12 @@
       <div class="body2">
         <figure class="screen"><div class="chrome"><div class="tb"><i></i><i></i><i></i><span>Update</span></div>
           <img src="gifs/editor_update.gif" alt="Loading a row and updating a value" /></div>
-          <figcaption>Load by ID, change a value — the confirmation shows the exact diff.</figcaption></figure>
+          <figcaption>Pick the record, change a value — the confirmation shows the exact diff.</figcaption></figure>
         <div>
           <p class="lead">Change a value on a row that already exists. You see precisely what changes before it commits.</p>
           <ol class="steps">
-            <li>Type the row's ID and click <span class="ui">Load for Edit</span> (or click the row in the table).</li>
-            <li>Change any fields, then click <span class="ui">Update Loaded …</span>.</li>
+            <li>Choose <span class="ui">Edit Existing</span>, then pick the row under <span class="ui">Record to Edit</span> (or click it in the table).</li>
+            <li>Change any fields, then click <span class="ui">Update Selected</span>.</li>
             <li>The summary lists each field as <b>old → new</b>. Click <span class="ui">Yes</span>.</li>
             <li>Cite the source and click <span class="ui">OK</span>.</li>
           </ol>
@@ -189,22 +189,23 @@
       </div>
     </section>
 
-    <!-- 4 REMOVE -->
-    <section class="step" data-step="4" data-grp="Custom SCBA Parameters" data-short="Remove a row">
+    <!-- 4 DEACTIVATE -->
+    <section class="step" data-step="4" data-grp="Custom SCBA Parameters" data-short="Deactivate a row">
       <div class="kicker">Custom SCBA Parameters · 03</div>
-      <h1 class="title">Remove a row</h1>
+      <h1 class="title">Deactivate a row</h1>
       <div class="body2">
-        <figure class="screen"><div class="chrome"><div class="tb"><i></i><i></i><i></i><span>Remove</span></div>
-          <img src="gifs/editor_remove.gif" alt="Removing a row by ID with confirmation" /></div>
-          <figcaption>Enter the ID, review the full row, confirm, and cite a source.</figcaption></figure>
+        <figure class="screen"><div class="chrome"><div class="tb"><i></i><i></i><i></i><span>Deactivate</span></div>
+          <img src="gifs/editor_remove.gif" alt="Deactivating the selected row with confirmation" /></div>
+          <figcaption>Pick the record, review the full row, confirm, and cite a source.</figcaption></figure>
         <div>
-          <p class="lead">Delete a parameter row by its ID. The full row is shown so you can be certain.</p>
+          <p class="lead">Retire a parameter row you no longer want used. The row is <b>kept</b> — it is marked inactive, never deleted.</p>
           <ol class="steps">
-            <li>Enter the ID in <span class="ui">… to Remove</span> (or click the row).</li>
-            <li>Click <span class="ui">Remove …</span>. The whole row is shown for review.</li>
+            <li>Choose <span class="ui">Edit Existing</span>.</li>
+            <li>Pick the row under <span class="ui">Record to Edit</span> (or click it in the table).</li>
+            <li>Click <span class="ui">Inactive Selected</span>. The whole row is shown for review.</li>
             <li>Click <span class="ui">Yes</span>, then cite the source.</li>
           </ol>
-          <div class="note"><span class="ic">⚠</span><p>Deletes are <b>permanent</b> and recorded in the audit trail with your citation.</p></div>
+          <div class="note"><span class="ic">⚠</span><p>Nothing is ever destroyed. The row is hidden from the lists and no longer offered to models. Tick <span class="ui">Show inactive</span> to find it again, then <span class="ui">Reactivate Selected</span> to restore it. Every change is recorded in the audit trail with your citation.</p></div>
         </div>
       </div>
     </section>
@@ -265,11 +266,11 @@
     </section>
 
     <!-- 8 PICK DB -->
-    <section class="step" data-step="8" data-grp="Database Viewer — Assets" data-short="Pick database">
-      <div class="kicker">Database Viewer · Assets · 01</div>
+    <section class="step" data-step="8" data-grp="Asset Database — Assets" data-short="Pick database">
+      <div class="kicker">Asset Database · Assets · 01</div>
       <h1 class="title">Pick a database</h1>
       <div class="body2">
-        <figure class="screen"><div class="chrome"><div class="tb"><i></i><i></i><i></i><span>Database Viewer</span></div>
+        <figure class="screen"><div class="chrome"><div class="tb"><i></i><i></i><i></i><span>Asset Database</span></div>
           <img src="gifs/assets_pick.gif" alt="Choosing an asset database from the dropdown" /></div>
           <figcaption>Choose a database; the grid reloads and the status line updates.</figcaption></figure>
         <div>
@@ -284,8 +285,8 @@
     </section>
 
     <!-- 9 COLUMNS -->
-    <section class="step" data-step="9" data-grp="Database Viewer — Assets" data-short="Columns">
-      <div class="kicker">Database Viewer · Assets · 02</div>
+    <section class="step" data-step="9" data-grp="Asset Database — Assets" data-short="Columns">
+      <div class="kicker">Asset Database · Assets · 02</div>
       <h1 class="title">Choose the columns</h1>
       <div class="body2">
         <figure class="screen"><div class="chrome"><div class="tb"><i></i><i></i><i></i><span>Select Columns</span></div>
@@ -303,8 +304,8 @@
     </section>
 
     <!-- 10 FILTER DATE -->
-    <section class="step" data-step="10" data-grp="Database Viewer — Assets" data-short="Filter by date">
-      <div class="kicker">Database Viewer · Assets · 03</div>
+    <section class="step" data-step="10" data-grp="Asset Database — Assets" data-short="Filter by date">
+      <div class="kicker">Asset Database · Assets · 03</div>
       <h1 class="title">Filter by a date range</h1>
       <div class="body2">
         <figure class="screen"><div class="chrome"><div class="tb"><i></i><i></i><i></i><span>Filter · date</span></div>
@@ -324,8 +325,8 @@
     </section>
 
     <!-- 11 FILTER VALUE -->
-    <section class="step" data-step="11" data-grp="Database Viewer — Assets" data-short="Filter by value">
-      <div class="kicker">Database Viewer · Assets · 04</div>
+    <section class="step" data-step="11" data-grp="Asset Database — Assets" data-short="Filter by value">
+      <div class="kicker">Asset Database · Assets · 04</div>
       <h1 class="title">Filter by a value</h1>
       <div class="body2">
         <figure class="screen"><div class="chrome"><div class="tb"><i></i><i></i><i></i><span>Filter · value</span></div>
@@ -344,8 +345,8 @@
     </section>
 
     <!-- 12 SORT -->
-    <section class="step" data-step="12" data-grp="Database Viewer — Assets" data-short="Sort">
-      <div class="kicker">Database Viewer · Assets · 05</div>
+    <section class="step" data-step="12" data-grp="Asset Database — Assets" data-short="Sort">
+      <div class="kicker">Asset Database · Assets · 05</div>
       <h1 class="title">Sort the list</h1>
       <div class="body2">
         <figure class="screen"><div class="chrome"><div class="tb"><i></i><i></i><i></i><span>Sort</span></div>
@@ -363,8 +364,8 @@
     </section>
 
     <!-- 13 RECORD -->
-    <section class="step" data-step="13" data-grp="Database Viewer — Assets" data-short="Open a record">
-      <div class="kicker">Database Viewer · Assets · 06</div>
+    <section class="step" data-step="13" data-grp="Asset Database — Assets" data-short="Open a record">
+      <div class="kicker">Asset Database · Assets · 06</div>
       <h1 class="title">Open a full record</h1>
       <div class="body2">
         <figure class="screen"><div class="chrome"><div class="tb"><i></i><i></i><i></i><span>Asset Record</span></div>
@@ -382,8 +383,8 @@
     </section>
 
     <!-- 14 PRINT -->
-    <section class="step" data-step="14" data-grp="Database Viewer — Assets" data-short="Print">
-      <div class="kicker">Database Viewer · Assets · 07</div>
+    <section class="step" data-step="14" data-grp="Asset Database — Assets" data-short="Print">
+      <div class="kicker">Asset Database · Assets · 07</div>
       <h1 class="title">Print the inventory</h1>
       <div class="body2">
         <figure class="screen"><div class="chrome"><div class="tb"><i></i><i></i><i></i><span>Print preview</span></div>
@@ -410,8 +411,8 @@
         <thead><tr><th>To…</th><th>Do this</th></tr></thead>
         <tbody>
           <tr><td>Edit parameters</td><td><span class="ui">Custom SCBA Parameters</span> → <span class="ui">Enable Edit Mode</span></td></tr>
-          <tr><td>Add / edit / remove a row</td><td><span class="ui">ADD …</span> · <span class="ui">Load for Edit</span> + <span class="ui">Update …</span> · <span class="ui">Remove …</span> — then cite a source</td></tr>
-          <tr><td>Browse assets</td><td><span class="ui">Database Viewer</span> → pick a database → <span class="ui">Assets</span></td></tr>
+          <tr><td>Add / edit / deactivate a row</td><td><span class="ui">ADD …</span> · <span class="ui">Edit Existing</span> + <span class="ui">Update Selected</span> · <span class="ui">Inactive Selected</span> — then cite a source</td></tr>
+          <tr><td>Browse assets</td><td><span class="ui">Asset Database</span> → pick a database → <span class="ui">Assets</span></td></tr>
           <tr><td>Shape the list</td><td><span class="ui">Columns…</span> · <span class="ui">Filter by:</span> · <span class="ui">Sort by:</span></td></tr>
           <tr><td>See the whole record</td><td>Double-click the row</td></tr>
           <tr><td>Print</td><td><span class="ui">Print…</span></td></tr>
